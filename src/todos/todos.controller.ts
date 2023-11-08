@@ -6,6 +6,8 @@ import {
   Param,
   Patch,
   Post,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { TodosService } from './todos.service';
 // import { Todo } from './interface.ts/todos.interface';
@@ -21,6 +23,7 @@ export class TodosController {
     return await this.todoService.findAll();
   }
 
+  @UsePipes(new ValidationPipe({}))
   @Post()
   async createTodo(@Body() newTodo: Todo) {
     await this.todoService.create(newTodo);

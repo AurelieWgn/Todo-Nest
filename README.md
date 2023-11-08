@@ -2,9 +2,11 @@ First Node/Nest project, this is a draft for all tests
 
 
 ## Doc links : 
-# NEST : https://docs.nestjs.com/
-# ORM : https://sequelize.org/docs/v6/other-topics/query-interface/
-# sequelize-typescript : https://www.npmjs.com/package/sequelize-typescript
+### NEST : https://docs.nestjs.com/
+### ORM : https://sequelize.org/docs/v6/other-topics/query-interface/
+### sequelize-typescript : https://www.npmjs.com/package/sequelize-typescript
+### class-validator : https://github.com/typestack/class-validator  (not sufficient for XSS or SQL injection)
+
 
 ## Description
 

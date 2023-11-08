@@ -1,7 +1,10 @@
-import { Column, Table, Model } from 'sequelize-typescript';
+import { IsNotEmpty } from 'class-validator';
+import { Column, Table, Model, Length } from 'sequelize-typescript';
 
 @Table
 export class Todo extends Model {
+  @IsNotEmpty()
+  @Length({ min: 10, max: 30 })
   @Column
   title: string;
 
